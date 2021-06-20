@@ -9,12 +9,12 @@ Quickfix:   - multibar and some other stuff
 Notes:      - Thanks to the supportive people on r/RoamResearch, GitHub and Twitter!
             - I have been changing a lot of thing in my professional career! Which is the reason for some of the delays
             - Super excited to have been selected to be on RoamResearch's Official theme's page!
-            - To install copy "@import url('https://zyigo.github.io/roamstyle/aquae.css');" to roam/css page (without the quotes)
+            - To install copy "@import url('https://zyigo.github.io/RoamStyle/Aquae.css');" to roam/css page (without the quotes)
 */
 
 
 /* IMPORT CORE THEME */
-@import url('https://zyigo.github.io/roamstyle/core.css');
+@import url('https://zyigo.github.io/RoamStyle/core.css');
 
 :root {
     /* THEME COLORS */
