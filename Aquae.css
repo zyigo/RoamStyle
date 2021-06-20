@@ -1,0 +1,230 @@
+/*
+Theme:      Roam Aquae Theme
+Version:    3.0.3
+Edits by:   Cal Robert Lee (https://www.calrobert.com/)
+Colors by:  Cal Robert Lee
+
+Quickfix:   - multibar and some other stuff
+
+Notes:      - Thanks to the supportive people on r/RoamResearch, GitHub and Twitter!
+            - I have been changing a lot of thing in my professional career! Which is the reason for some of the delays
+            - Super excited to have been selected to be on RoamResearch's Official theme's page!
+            - To install copy "@import url('https://calrobertlee.github.io/roam-themes/aquae.css');" to roam/css page (without the quotes)
+*/
+
+
+/* IMPORT CORE THEME */
+@import url('https://calrobertlee.github.io/roam-themes/core.css');
+
+:root {
+    /* THEME COLORS */
+    --theme-blue-1: #0073f9;
+    --theme-gray-1: #282828;
+    --theme-white-1: #ffffff; 
+
+    /* PRIMARY FONTS */
+    --main-font: 'Inter', sans-serif;
+    --main-font-color: var(--theme-gray-1);
+    --main-font-size: 1.0em;
+  
+    /* FONT COLORS */
+  
+    --page-link-color: var(--theme-blue-1);
+    --page-bracket-color: #bfbfbf;
+    --external-link-color: var(--theme-blue-1);
+    --external-link-hover-color: #0073f9ba;
+    --alias-hover-color: #0015f9cf;
+    --daily-notes-link-color: none;
+    --sidebar-link-color: none;
+    --title-color: #3b3f42;
+    --ref-title-color: #278afc;
+    --header-color: #1c1c1c;
+    --strong: var(--theme-gray-1);
+    --emphasis: var(--theme-gray-1);
+    --highlight-font-color: var(--theme-gray-1);
+    --highlight-background-color: #fff1a4;
+    --highlight-link-color: var(--theme-blue-1);
+    --highlight-padding: 4px 5px 4px 5px;
+    --reference-header-color: #c1cad4;
+    --reference-header-underline-color: #c5ccd46e;
+    --sidebar-font-color: #717171;
+    --sidebar-font-color-hover: #969696;
+    --sidebar-hover-bg: none;
+    --sidebar-font-hover-color: #f5f8fa;
+    --sidebar-shorcut-color: #545454;
+  
+    --tag-font-color: #bebebe;
+    --tag-bg-color: #f9f9f9cf;
+    --tag-border-radius: 10px;
+    --tag-border: 1px solid #e6e6e682;
+    --tag-padding: 1px 5px 2px;
+    --tagHover-font-color: #b8b8b8;
+    --tagHover-bg-color: #e8e8e8;
+    --tagHover-border: 1px solid #dddddd82;
+  
+    --bullet-color: #0069e3;
+    --bullet-closed-color: #bcdbffb5;
+    --bullet-closed-border-color: #0069e345;
+    --multibar: hsl(220, 9%, 85%);
+    --bullet-position: ; /* UPDATE*/
+  
+    --checkmark-top: -1px;
+    --checkmark-left: -2px;
+    --checkmark-height: 14px;
+    --checkmark-width: 14px;
+    --checkmark-border-radius: 4px;
+    --checkmark-color: 1px solid var(--theme-white-1);
+    --checkmark-border: 1px solid hsl(0, 0%, 84%);
+    --checkmark-bg-color: var(--theme-white-1);
+    --checkedmark-border: 1px solid var(--theme-blue-1);
+    --checkedmark-bg-color: #3c96ff;
+  
+    --code-bg: #f1f6fb;
+    --code-font: 'Source Code Pro', 'Courier New', Courier, monospace;
+    --code-font-color: #333333;
+    --code-font-size: 1.0em;
+    --code-border: 1px solid #d5d8db;
+  
+    --codemirror-bg: hsl(210, 53%, 98%);
+    --codemirror-border-color: #dadde1;
+    --codemirror-border-radius: 3px;
+    --codemirror-linenumber: #aaaeb5;
+    --code-matchingbracket-color: #f90;
+  
+    --cm-comment: hsl(230, 0%, 44%);
+    --cm-def: hsl(41, 99%, 40%);
+    --cm-keyword: hsl(301, 66%, 43%);
+    --cm-callee: hsl(177, 72%, 47%);
+    --cm-operator: hsl(177, 72%, 47%);
+    --cm-builtin: hsl(177, 72%, 47%);
+    --cm-string: hsl(119, 37%, 50%);
+    --cm-variable-3: hsl(177, 72%, 47%);
+    --cm-variable-2: hsl(  5, 74%, 59%);
+    --cm-variable: hsl(53, 99%, 40%);
+    --cm-tag: hsl(  5, 74%, 59%);
+    --cm-property: hsl(221, 87%, 60%);
+    --cm-number: hsl(41, 94%, 48%);
+    --cm-atom: hsl(41, 94%, 48%);
+    --cm-qualifier: hsl(41, 94%, 48%);
+  
+    --new-page-color: none;
+  
+    --ref-count-font-size: 12px;
+  
+    /* BACKGROUNDS & OUTLINES */
+  
+    --body-bg: var(--theme-white-1);
+    --topbar-bg: none;
+    --topbar-border-bottom: none;
+    --left-sidebar-bg: #2e3234;
+    --left-sidebar-border-right: none;
+    --left-sidebar-divider-color: none;
+    --right-sidebar-bg: var(--theme-white-1);
+    --right-sidebar-border-left: 1px solid #e3e5e8;
+    --divider-color: #c2c7cb;
+    --allpage-bottom-border-color: #ececec;
+    --reference-item-bg: #fdfdfd;
+    --reference-item-border-radius: 6px;
+    --reference-item-border: 1px solid #e6e6e68a;
+  
+    --block-highlight: #d8ecff;
+    --block-highlight-bg: #d3ffa4;
+  
+    --popover-bg: var(--theme-white-1);
+    --popover-font-color: var(--theme-gray-1);
+    --popover-border: 0.5px solid red; /* #UPDATE */
+  
+    --inline-search-bg: var(--theme-white-1);
+    --inline-search-border-radius: 6px;
+    --inline-search-border: 1px solid #d1d1d1;
+    --inline-search-button-bg-color: var(--theme-white-1);
+  
+    --datepicker-bg: var(--inline-search-bg);
+    --datepicker-day-wrapper: none;
+    --datepicker-altfont-color: #dadde0; /* #UPDATE */
+  
+    --search-font-color: var(--theme-gray-1);
+    --search-body-font-color: #e8e8e8;
+    --search-outline: hsl(212, 100%, 62%);
+    --search-bg: var(--theme-white-1);
+    --search-border-radius: 4px;
+    --search-selected-row: #f5f5f5;
+  
+    --block-ref-bg: none;
+    --block-ref-hover: none;
+    --block-ref-hover-bg: #f6f9fb;
+    --block-ref-border-bottom: #d2dae3;
+  
+    --pages-row-highlight: ; /* NEEDS LOVE */
+    --pages-header-row: var(--theme-white-1);
+    --pages-mentions-level-bg: #3c96ff;
+    --pages-mentions-level1-bg: #3d71ff;
+    --pages-mentions-level2-bg: #3c50ff;
+    --pages-mentions-font-color: var(--theme-white-1);
+  
+    --icon-color: #5c636b;
+    --icon-bg-hover: #ebebeb;
+    --icon-color-hover: #5c636b;
+    --minirightbar-icon-color: #cfcfcf;
+    --pin-color: #EE6F2D;
+  
+    /* MISC */
+      
+    --kanban-board-bg: #fafcfd;
+    --kanban-board-border: 1px solid #e6e6e6;
+    --kanban-board-border-radius: 10px;
+    --kanban-column-bg: #ecececdb;
+    --kanban-column-font-color: var(--main-font-color);
+    --kanban-column-margin: 4px 8px 0px 4px;
+    --kanban-card-bg: var(--theme-white-1);
+    --kanban-card-font-color: var(--main-font-color);
+    --kanban-card-border-radius: 4px;
+    --kanban-card-border: 1px solid #dbdbdb;
+  
+    --table-border: 1px solid #cacaca;
+  
+    --embed-container-bg: #ecf2f8;
+  
+    --astrolabe-bg-color: #f2f2f2;
+  
+    --hr-color: #ccc;
+  
+    --blockquote-font-color: #111111;
+    --blockquote-border-color: #07f;
+    --blockquote-bg: var(--theme-white-1);
+    --blockquote-cite: #000000;
+  
+    --encrypted-font-color: #0077ffc4;
+    --encrypted-bg: hsl(212, 39%, 98%);
+    --encrypted-font-size: 13px;
+    --encrypted-font-weight: 300;
+    --encrypted-border-radius: 4px;
+    --encrypted-padding: 2px 4px;
+      
+    --select-bg-color: var(--theme-white-1);
+    --select-border-color: #d5d5d5;
+              
+    --emoji-bg: #f0f7fd;
+    --emoji-border: 0px solid none;
+    --emoji-color: none;
+  
+    --pomo-bg: #fff6f6;
+    --pomo-border: var(--divider-color);
+    --pomo-running-border: #BD453F;
+    --pomo-running-font-color: #BD453F;
+    --pomo-break-bg: #E4FBF1;
+    --pomo-break-border: #469765;
+    --pomo-break-font-color: #469765;
+  
+    --query-results-border: none;
+    --query-border: 1px solid #f8f1d2;
+    --query-border-radius: 6px;
+    --query-padding-bottom: 16px;
+    --query-title-font-color: #d0b944;
+    --query-title-bg: #fffced;
+  
+  
+    /* Scrollbar settings - to disable set values to none */
+    --scrollbar-track: true;
+    --scrollbar-thumb: ;
+}
