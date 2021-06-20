@@ -610,6 +610,14 @@ span.bp3-icon.bp3-icon-chevron-right,
     color: #DCDEDD !important;
     border-bottom: none !important;
   }
+
+.bp3-menu-item.menu-item {
+    color: var(--sidebar-font-color);
+}
+
+.bp3-menu-item.menu-item:hover {
+    color: var(--popover-font-color);
+}
   
 /*---------------------------------- 
     #ALL PAGES
